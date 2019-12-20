@@ -11,7 +11,8 @@ import {createStackNavigator} from 'react-navigation-stack';
       connexion: {screen: connexion},
       }, {
       headerMode: 'screen'
- });
+ }
+ );
       const App = createAppContainer(MainStackNavigator);
 
      export default App;

@@ -41,10 +41,8 @@ export default class loggedOut extends Component {
                         value={this.state.email}
                         onChange={this.handleEmailChange}
                     />
-                </View>
-                <View style={{ alignSelf: 'flex-start'}}>
                     <View style= {{flexDirection: "row",}}>
-                        <Text style={{ color: 'white', fontSize:20, marginTop: 50,alignSelf: 'center'}}>Mot de passe </Text>
+                        <Text style={{ color: 'white', fontSize:20, marginTop: 50, marginLeft:22}}>Mot de passe </Text>
                         <Text style={{ color: 'white', fontSize:20, marginTop: 50, marginLeft:170}} onPress={() => this.setState({ secureTextEntry: false })}>Show</Text>
                     </View>
                     <TextInput
@@ -55,6 +53,8 @@ export default class loggedOut extends Component {
                         onChange={this.handlePasswordChange}
                         type={password}
                     />
+                </View>
+                <View style={{ alignSelf: 'center', marginTop:50}}>
                     <Button
                         disabled={!enabled}
                         style={{ color: 'white', fontSize:20, marginTop: 50, alignSelf: 'center'}}
